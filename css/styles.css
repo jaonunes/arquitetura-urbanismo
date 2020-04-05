@@ -14,14 +14,21 @@ header{
 header h1{
   font-size: 60px;
   font-family: 'Lobster', cursive;
+  text-shadow: #CC9191 0.1em 0.2em 0.5em;
+  
+  
 }
 header p{
   font-size: 20px;
   font-family: 'Quicksand', sans-serif;
+  color: #803434;
 }
 section{
-  padding-top: 70px;
+
+  padding-top: 40px;
+  
 }
+
 
 h6{
   font-family: 'Open Sans', sans-serif;
@@ -62,19 +69,51 @@ h6{
   margin: 17px 32px;
   -webkit-transition: all 0.3s ease-in-out;
 }
+.figuras-meus-projetos i{
+  font-size: 40px;
+  margin-top: 25px;
 
+}
+.textos-meus-projetos h3{
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 5px;
+
+}
+.textos-meus-projetos p{
+  display: block;
+  font-size: 15px;
+}
+.textos-meus-projetos{
+  margin-top: 4px;
+}
+
+.meus-projetos{
+  font-size: 38px;
+  color: #CC9191;
+}
+.ul-meus-projetos li h3{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 0 0 5px 0;
+  font-weight: 400;
+}
 .bannerHeaderAll{
   position: relative;
-  background: url(/images/background-header.png);
-  background-size: auto;
+  background: url(/images/img-bg-header.png);
+  background-size: 100% 100%;
   background-position: top center;
   height: 120vh;
-  
+
   
 }
 .bannerHeader{  
   padding-top: 40vh;
-  color: white;
+  color: rgb(167, 118, 118);
+  
+  
 }
 .titulo-section{
   font-family: 'Montserrat', sans-serif;
@@ -115,7 +154,53 @@ h6{
   display: block;
   text-align: center;
 }
-
+.displaySection{
+  transition: ease-in-out;
+  transition-duration: 0.3s;
+  visibility: visible;
+  
+}
+.btn-conheca-meu-trb a{
+    color: #ffffff;
+    background: #a77676;
+    padding: 10px 22px;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+    opacity: 0.6;
+}
+.btn-conheca-meu-trb a:hover{
+    color: #ffffff;
+    background: #a77676;
+    padding: 10px 22px;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    opacity: 1;
+  
+}
+.figuras-contato{
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+}
+.textos-contatos{
+  margin-top: 10px;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+.img-contato{
+  align-items: center;
+}
+.contato-conteudo{
+  margin-left: 20px;
+}
 /*ID*/
 
 #sobre-mim .container p{
@@ -123,4 +208,51 @@ h6{
   font-family: 'Open Sans', sans-serif;
   text-align: justify;
 
+}
+#meus-projetos{
+
+background-color: #6969690d;
+padding-bottom: 50px;
+}
+#wpp a{
+  color: inherit;
+}
+#wpp a span{
+  display: ;
+} 
+
+#wpp a:hover span{
+  display: block;
+}
+#instagram a{
+  color: inherit;
+}
+#instagram a span{
+  display: ;
+} 
+
+#instagram a:hover span{
+  display: block;
+}
+#mail:hover  #texto-mail{
+  display: block;
+}
+#texto-mail{
+  display: ;
+} 
+#texto-mail a{
+  color: inherit;
+}
+
+/* Animação*/
+
+.js .anime {
+	opacity: 0;
+	transform: translate3D(-50px, 0px, 0px);
+}
+
+.js .anime-init {
+	opacity: 1;
+	transform: translate3D(0px, 0px, 0px);
+	transition: .3s all ease;
 }

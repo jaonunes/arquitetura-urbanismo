@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0">
-    <title>Camila Anjos - Arquiteta e Urbanista</title>
-    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+    <title>Nome Aqui - Arquitetura e Urbanismo</title>
     <link rel="stylesheet" href="/css/bootstrap/css/bootstrap.min.css">
+    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+    <link href="/css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="/js/jquery.js"></script>
     <script src="/js/animacao.js"></script>
   </head>
@@ -14,14 +15,14 @@
     <header id="home">
       <div class="bannerHeaderAll">
         <div class="bannerHeader container"> 
-          
-           
-          
-          <h1> Camila Anjos</h1>
-          <p> Arquiteta e Urbanista</p>
+          <h1> Nome Aqui</h1>
+          <p> Arquitetura e Urbanismo</p>
           <br>
-          <a href="#sobre-mim" class="animation-ancora"> <button class="btn btn-default"> Conheça meu trabalho! </button></a>
-        </div>
+          <div class="btn-conheca-meu-trb">
+            <a href="#sobre-mim" class="animation-ancora">Conheça meu trabalho!</a>
+          </div> 
+          </div>
+          
       </div>
     </header>
     <nav class="nav-main" id="nav-main"> 
@@ -37,10 +38,10 @@
   
   <section id="sobre-mim">
     <div class="container">
-      <h2 class="titulo-section">Sobre</h2>
+      <h2 class="titulo-section anime">Sobre</h2>
       <h6></h6> 
-      <div class="row">
-        <div class="col-md-8"> 
+      <div class="row anime">
+        <div class="col-md-8 "> 
           <div class="col-md-8"> 
             <p>Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis. 
               Copo furadis é disculpa de bebadis, arcu quam euismod magna. 
@@ -59,55 +60,99 @@
   </section>
   <section id="meus-projetos">
     <div class="container">
-      <h2 class="titulo-section">Meus Projetos</h2>
+      <h2 class="titulo-section anime">Meus Projetos</h2>
       <h6></h6>
-      <div class="row">
-        <div class="col-md-6">
-          <figure class="col-md-4">
-            <img src="/images/img-sobre.png" alt="">
-          </figure>
-        </div>
-        <div class="col-md-6"> 
-          <div class="col-md-8"> 
-            <p>
-              Mussum Ipsum, cacilds vidis litro abertis. Diuretics paradis num copo é motivis de denguis. 
-              Detraxit consequat et quo num tendi nada. Cevadis im ampola pa arma uma pindureta. 
-              Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi.
-            </p>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="contato">
-    <div class="container">
-      <h2 class="titulo-section">Contato</h2>
-      <h6></h6> 
-      <div class="row">
-        <div class="col-md-8"> 
-          <div class="col-md-8"> 
-            <p>Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis. 
-              Copo furadis é disculpa de bebadis, arcu quam euismod magna. 
-              Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. 
-              Viva Forevis aptent taciti sociosqu ad litora torquent.</p>
-          </div>
-          
-        </div>
+      <div class="row anime">
         <div class="col-md-4">
           <figure class="col-md-4">
             <img src="/images/img-sobre.png" alt="">
           </figure>
         </div>
+
+        <div class="col-md-8 meus-projetos">
+          <div class="col-md-1 figuras-meus-projetos">
+            <i class="fa fa-heart" aria-hidden="true"></i>
+          </div>
+          <div class=" col-md-8 textos-meus-projetos">
+            <h3>Efêmeros</h3>
+            <p> Mussum Ipsum, cacilds vidis litro abertis. Si num tem leite então bota uma pinga aí cumpadi! </p>
+          </div>
+        </div>
+        <div class="col-md-8 meus-projetos">
+          <div class="col-md-1 figuras-meus-projetos">
+            <i class="fa fa-building" aria-hidden="true"></i>
+          </div>
+          <div class=" col-md-8 textos-meus-projetos">
+            <h3>Apartamentos</h3>
+            <p> Mussum Ipsum, cacilds vidis litro abertis. Si num tem leite então bota uma pinga aí cumpadi! </p>
+          </div>
+        </div>
+        <div class="col-md-8 meus-projetos">
+          <div class="col-md-1 figuras-meus-projetos">
+            <i class="fa fa-home" aria-hidden="true"></i>
+          </div>
+          <div class=" col-md-8 textos-meus-projetos">
+            <h3>Casas</h3>
+            <p> Mussum Ipsum, cacilds vidis litro abertis. Si num tem leite então bota uma pinga aí cumpadi! </p>
+          </div>
+        </div>
+      </div>
+  </section>
+  <section id="contato">
+    <div class="container">
+      <h2 class="titulo-section anime">Contato</h2>
+      <h6></h6> 
+
+      <div class="row anime contato-conteudo">      
+        <div class="col-md-12">
+          <div id="mail"> 
+                <div class="figuras-contato col-md-1"> 
+                <i class="fa fa-envelope-square" aria-hidden="true" id="mail"></i>
+                </div>
+
+                <div class="textos-contatos col-md-8" id="texto-mail">
+                <a href="mailto:contato@contato.com">contato@contato.com</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+          <div id="wpp"> 
+            <a>
+              <div class="figuras-contato col-md-1"> 
+                  <i class="fa fa-whatsapp" aria-hidden="true"></i>
+              </div>
+  
+              <div class="textos-contatos col-md-8" id="texto-wpp">
+                <span>(XX) 9XXX - XXXX</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div id="instagram"> 
+          <a>
+            <div class="figuras-contato col-md-1"> 
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </div>
+
+            <div class="textos-contatos col-md-8" id="texto-instagram">
+              <span>@instagram</span>
+            </div>
+          </a>
+          
+        </div>
+        </div>
+          
+
       </div>
     </div>
   </section>
   <footer class="footer">
     <div class="container">
       <div class="footer-logo">
-        <p> img Camila Anjos - Arquiteta e Urbanista</p>
+        <p> img Nome Aqui - Arquitetura e Urbanismo</p>
       </div>
-      <span class="copyright">© Camila Anjos - Arquiteta e Urbanista All Rights Reserved</span>
+      <span class="copyright">© Nome Aqui - Arquitetura e Urbanismo All Rights Reserved</span>
       <div class="credits">
         <span> Desenvolved by <a href="https://jaonunes.github.io" target="newblank">João Nunes</a> </span>
       </div>
