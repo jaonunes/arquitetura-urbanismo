@@ -10,7 +10,7 @@ $(function() {
  $(function(){   
     var nav = $('#nav-main');   
     $(window).scroll(function () { 
-        if ($(this).scrollTop() > 790) { 
+        if ($(this).scrollTop() > 650) { 
             nav.addClass("menu-fixo");
             $('body').css('padding-top', 70);
         } else { 
@@ -52,10 +52,33 @@ $(document).ready(function() {
 	});
 });
 
-$("#wpp").hover(
-	function() {
-	   $('#texto-wpp').collapse('show');
-	 }, function() {
-	   $('#texto-wpp').collapse('hide');
-	 }
-   );
+function fecharMenu(){
+
+	var classeOpen = document.querySelector("#collapse-navbar")
+		classeOpen.classList.remove('in');
+	
+}
+
+
+function filter(el){
+	var itens = document.getElementsByClassName('item-projeto');
+	for(var i = 0; i < itens.length; i++){
+	  if(itens[i].classList.contains(el)){
+		$(itens[i]).addClass("projetos-aparecendo");
+		$(itens[i]).removeClass("projetos-escondendo");
+
+	  }
+	  else{
+		$(itens[i]).addClass("projetos-escondendo");
+		$(itens[i]).removeClass("projetos-aparecendo");
+	  }
+	}
+  };
+  
+  function reset(){
+	var itens = document.getElementsByClassName('item-projeto');
+
+	for(var i = 0; i < itens.length; i++){
+	  $(itens[i]).removeClass("projetos-aparecendo projetos-escondendo")
+	}
+  };

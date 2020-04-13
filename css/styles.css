@@ -3,14 +3,24 @@
   margin:0px;
   padding:0px;
 }
+html, body{
+  height: 100%;
+}
 body{
   font-size: 14px;
 }
 header{
   text-align: center;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  position: relative;
+  background: url(/images/img-bg-header.png);
+  background-size: cover;
+  background-position: top center;
+  height: 100%;
 }
-
+nav{
+  color: black;
+}
 header h1{
   font-size: 60px;
   font-family: 'Lobster', cursive;
@@ -39,17 +49,7 @@ h6{
 /* Classes*/
 
 
-.nav-main{
-  z-index: auto;
-  position: relative;
-  padding: 0;
-  border-bottom: 1px solid #dddddd;
-  box-shadow: 0 4px 5px -3px #ececec;
-  background: #ffffff;
-  display: inline block;
 
-
-}
 
 .ul-main{
   text-align: center;
@@ -69,51 +69,39 @@ h6{
   margin: 17px 32px;
   -webkit-transition: all 0.3s ease-in-out;
 }
-.figuras-meus-projetos i{
-  font-size: 40px;
-  margin-top: 25px;
 
-}
-.textos-meus-projetos h3{
-  font-size: 16px;
-  text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
-  margin-bottom: 5px;
-
-}
-.textos-meus-projetos p{
-  display: block;
-  font-size: 15px;
-}
-.textos-meus-projetos{
-  margin-top: 4px;
-}
-
-.meus-projetos{
-  font-size: 38px;
-  color: #CC9191;
-}
-.ul-meus-projetos li h3{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  text-transform: uppercase;
-  margin: 0 0 5px 0;
-  font-weight: 400;
-}
 .bannerHeaderAll{
   position: relative;
-  background: url(/images/img-bg-header.png);
-  background-size: 100% 100%;
-  background-position: top center;
-  height: 120vh;
+  height: 100%;
 
   
 }
 .bannerHeader{  
-  padding-top: 40vh;
+
   color: rgb(167, 118, 118);
+  padding: 20px;
+  width: 100%;
+  border-radius: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
   
-  
+}
+.bannerHeaderTexto{
+  padding: 20px;
+  width: 100%;
+  border-radius: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
 }
 .titulo-section{
   font-family: 'Montserrat', sans-serif;
@@ -186,22 +174,46 @@ h6{
     opacity: 1;
   
 }
-.figuras-contato{
-  font-size: 30px;
+.botoes-filtro-projetos ul li{
+  list-style: none;
+  display: inline;
+  margin: 5px;
+  padding: 10px;
   font-family: 'Montserrat', sans-serif;
+  
 }
-.textos-contatos{
-  margin-top: 10px;
-  font-size: 15px;
+.botoes-filtro-projetos ul li a:hover{
+  background: #a77676;
+  color: #ffffff;
   font-family: 'Montserrat', sans-serif;
+  
 }
-.img-contato{
-  align-items: center;
+
+.btn-default{
+  border: none;
+
 }
-.contato-conteudo{
-  margin-left: 20px;
+.thumbnail-projetos img{
+  width: 300px;
+  height: 220px;
 }
+.projetos-aparecendo{
+  display: block;
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+}
+.projetos-escondendo{
+  display: none;
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+
 /*ID*/
+
+
 
 #sobre-mim .container p{
   font-size: 15px;
@@ -214,36 +226,10 @@ h6{
 background-color: #6969690d;
 padding-bottom: 50px;
 }
-#wpp a{
-  color: inherit;
-}
-#wpp a span{
-  display: ;
-} 
 
-#wpp a:hover span{
-  display: block;
+#nav-main{
+  z-index: 100;
 }
-#instagram a{
-  color: inherit;
-}
-#instagram a span{
-  display: ;
-} 
-
-#instagram a:hover span{
-  display: block;
-}
-#mail:hover  #texto-mail{
-  display: block;
-}
-#texto-mail{
-  display: ;
-} 
-#texto-mail a{
-  color: inherit;
-}
-
 /* Animação*/
 
 .js .anime {
@@ -255,4 +241,17 @@ padding-bottom: 50px;
 	opacity: 1;
 	transform: translate3D(0px, 0px, 0px);
 	transition: .3s all ease;
+}
+@media(min-width:768px) {
+  .nav-main{
+    z-index: auto;
+    position: relative;
+    padding: 0;
+    border-bottom: 1px solid #dddddd;
+    box-shadow: 0 4px 5px -3px #ececec;
+    background: #ffffff;
+    display: inline block;
+
+
+  }
 }
