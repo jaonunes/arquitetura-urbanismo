@@ -79,14 +79,15 @@
     <div class="container">
       <h2 class="titulo-section anime">Projetos</h2>
       <h6></h6>
-      <div class="anime">
-        <div>
-        <div class="botoes-filtro-projetos">
-          <ul>
-            <li> <a onClick="reset()" type="button" class="btn btn-default"> Todos </a></li>
-            <li><a onClick="filter('projeto-arquitetura')" type="button" class="btn btn-default">Arquitetura</a></li>
-            <li><a onClick="filter('interior-residencial')" type="button" class="btn btn-default">Interiores - residencial</a></li>
-            <li> <a onClick="filter('interior-comercial')"type="button" class="btn btn-default">Interiores - comercial</a></li>
+      <div class="anime"> 
+
+        </div>
+        <div class="botoes-filtro-projetos container">
+          <ul class="row">
+            <li class="anime"> <a onClick="reset(this)" type="button" class="btn btn-default botao-projeto-a" id="botao-todos"> Todos </a></li>
+            <li class="anime" ><a onClick="filter(this)" type="button" class="btn btn-default botao-projeto-a" id="projeto-arquitetura">Arquitetura</a></li>
+            <li class="anime"><a onClick="filter(this)" type="button" class="btn btn-default botao-projeto-a" id="interior-residencial">Interiores - residencial</a></li>
+            <li class="anime"> <a onClick="filter(this)"type="button" class="btn btn-default botao-projeto-a"id="interior-comercial">Interiores - comercial</a></li>
           </ul>
         </div>
         
@@ -94,11 +95,53 @@
           <div class="col-sm-6 col-md-4 col-lg-3 item-projeto projeto-arquitetura">
             <img class="thumbnail" src="/images/arquitetura/arquitetura1.png" alt="Projeto arquitetura 1">
           </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 item-projeto projeto-arquitetura">
+            <img class="thumbnail" src="/images/arquitetura/arquitetura2.png" alt="Projeto arquitetura 2">
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 item-projeto projeto-arquitetura">
+            <img class="thumbnail" src="/images/arquitetura/arquitetura3.png" alt="Projeto arquitetura 3">
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 item-projeto projeto-arquitetura">
+            <img class="thumbnail" src="/images/arquitetura/arquitetura4.png" alt="Projeto arquitetura 4">
+          </div>
           <div class="col-sm-6 col-md-4 col-lg-3 item-projeto interior-residencial">
-            <img class="thumbnail" src="/images/residencial/residencial1.png" alt="Projeto arquitetura 1">
+            <img class="thumbnail" src="/images/residencial/residencial1.png" alt="Projeto Residencial 1">
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 item-projeto interior-residencial">
+            <img class="thumbnail" src="/images/residencial/residencial2.png" alt="Projeto Residencial 2">
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 item-projeto interior-residencial">
+            <img class="thumbnail" src="/images/residencial/residencial3.png" alt="Projeto Residencial 3">
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 item-projeto interior-residencial">
+            <img class="thumbnail" src="/images/residencial/residencial4.png" alt="Projeto Residencial 4">
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 item-projeto interior-residencial">
+            <img class="thumbnail" src="/images/residencial/residencial5.png" alt="Projeto Residencial 5">
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 item-projeto interior-residencial">
+            <img class="thumbnail" src="/images/residencial/residencial6.png" alt="Projeto Residencial 6">
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 item-projeto interior-residencial">
+            <img class="thumbnail" src="/images/residencial/residencial7.png" alt="Projeto Residencial 7">
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 item-projeto interior-residencial">
+            <img class="thumbnail" src="/images/residencial/residencial8.png" alt="Projeto Residencial 8">
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3 item-projeto interior-comercial">
-            <img class="thumbnail" src="/images/comercial/comercial1.png" alt="Projeto arquitetura 1">
+            <img class="thumbnail" src="/images/comercial/comercial1.png" alt="Projeto Comercial 1">
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 item-projeto interior-comercial">
+            <img class="thumbnail" src="/images/comercial/comercial2.png" alt="Projeto Comercial 2">
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 item-projeto interior-comercial">
+            <img class="thumbnail" src="/images/comercial/comercial3.png" alt="Projeto Comercial 3">
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 item-projeto interior-comercial">
+            <img class="thumbnail" src="/images/comercial/comercial4.png" alt="Projeto Comercial 4">
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 item-projeto interior-comercial">
+            <img class="thumbnail" src="/images/comercial/comercial5.png" alt="Projeto Comercial 5">
           </div>
 
         </div>
@@ -121,4 +164,5 @@
   
 
   </body>
+  <script src="/js/escondeProjetosClass.js"></script>
 </html>

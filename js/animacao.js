@@ -34,6 +34,10 @@ $(document).ready(function() {
 			animationClass = 'anime-init',
 			windowHeight = $(window).height(),
 			offset = windowHeight - (windowHeight / 4);
+	document.body.onresize = function() {
+		windowHeight = $(window).height();
+		offset = windowHeight - (windowHeight/10);
+	};
 
 	function animeScroll() {
 		var documentTop = $(document).scrollTop();
@@ -61,9 +65,14 @@ function fecharMenu(){
 
 
 function filter(el){
-	var itens = document.getElementsByClassName('item-projeto');
+	var itens = document.getElementsByClassName("item-projeto");
+		id = el.id;
+		
+		botoes = document.querySelectorAll(".botao-projeto-a")
+
+		
 	for(var i = 0; i < itens.length; i++){
-	  if(itens[i].classList.contains(el)){
+	  if(itens[i].classList.contains(id)){
 		$(itens[i]).addClass("projetos-aparecendo");
 		$(itens[i]).removeClass("projetos-escondendo");
 
@@ -73,12 +82,37 @@ function filter(el){
 		$(itens[i]).removeClass("projetos-aparecendo");
 	  }
 	}
+	
+	for(var j=0; j < botoes.length; j++){
+		
+		if(botoes[j].id == id){
+			$(botoes[j]).addClass("botao-clicado");
+		}
+		else{
+			$(botoes[j]).removeClass("botao-clicado");
+		}
+	}
+	
+
   };
   
-  function reset(){
+  function reset(elemento){
 	var itens = document.getElementsByClassName('item-projeto');
+		idReset= elemento.id;
+		botoes = document.querySelectorAll(".botao-projeto-a")
+
 
 	for(var i = 0; i < itens.length; i++){
 	  $(itens[i]).removeClass("projetos-aparecendo projetos-escondendo")
 	}
+	for(var j=0; j < botoes.length; j++){
+		
+		if(botoes[j].id == idReset){
+			$(botoes[j]).addClass("botao-clicado");
+		}
+		else{
+			$(botoes[j]).removeClass("botao-clicado");
+		}
+	}
   };
+

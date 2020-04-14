@@ -13,7 +13,7 @@ header{
   text-align: center;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   position: relative;
-  background: url(/images/img-bg-header.png);
+  background: url(/images/bg.gif);
   background-size: cover;
   background-position: top center;
   height: 100%;
@@ -24,14 +24,14 @@ nav{
 header h1{
   font-size: 60px;
   font-family: 'Lobster', cursive;
-  text-shadow: #CC9191 0.1em 0.2em 0.5em;
+  text-shadow: rgb(0, 0, 0)em 2px 5px;
   
   
 }
 header p{
   font-size: 20px;
   font-family: 'Quicksand', sans-serif;
-  color: #803434;
+  color: #FFCFCF;
 }
 section{
 
@@ -63,7 +63,7 @@ h6{
   display: inline;
 }
 .ul-main li a{
-  color: black;
+  color: rgb(255, 255, 255);
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   margin: 17px 32px;
@@ -92,6 +92,7 @@ h6{
   
 }
 .bannerHeaderTexto{
+  color: #996D6D;
   padding: 20px;
   width: 100%;
   border-radius: 8px;
@@ -174,19 +175,23 @@ h6{
     opacity: 1;
   
 }
-.botoes-filtro-projetos ul li{
-  list-style: none;
-  display: inline;
-  margin: 5px;
-  padding: 10px;
-  font-family: 'Montserrat', sans-serif;
-  
-}
-.botoes-filtro-projetos ul li a:hover{
+
+.botao-clicado{
   background: #a77676;
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
   
+}
+.botoes-filtro-projetos ul li a:active{
+  background: #a77676;
+  color: #ffffff;
+  
+  
+}
+.botoes-filtro-projetos{
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .btn-default{
@@ -195,25 +200,35 @@ h6{
 }
 .thumbnail-projetos img{
   width: 300px;
-  height: 220px;
+  height: 225px;
 }
+
 .projetos-aparecendo{
   display: block;
-  -webkit-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  transform: scale(0.8);
+ 
 }
 .projetos-escondendo{
   display: none;
-  -webkit-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  transform: scale(0.8);
+
+
+}
+.nav>li>a:focus, .nav>li>a:hover{
+  color: #000000;
+}
+.thumbnail{
+  transition: ease-in-out;
+  transition-delay: 3s;
 }
 
 
 /*ID*/
 
-
+#sobre-mim{
+  background-color: #FFCFCF;
+}
+#contato{
+  background-color: #FFCFCF;
+}
 
 #sobre-mim .container p{
   font-size: 15px;
@@ -223,12 +238,15 @@ h6{
 }
 #meus-projetos{
 
-background-color: #6969690d;
+background-color: #CC9191;
 padding-bottom: 50px;
 }
 
 #nav-main{
   z-index: 100;
+  background-color: #664B4B;
+  border-color: #664B4B;
+  border-radius: 0;
 }
 /* Animação*/
 
@@ -254,4 +272,43 @@ padding-bottom: 50px;
 
 
   }
+  .botoes-filtro-projetos ul li{
+    list-style: none;
+    display: inline;
+    margin: 5px;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    
+  }
+  .nav-tabs.nav-justified>li>a{
+    border-bottom: none;
+  }
+  
+}
+@media(max-width:767px){
+  .botoes-filtro-projetos ul li{
+    list-style: none;
+    display: list-item;
+    
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+    
+  }
+
+  .row{
+    margin-right: 0px;
+  }
+  .item-projeto{
+    left: 12%;
+    max-width: 220px;
+  }
+  .item-projeto img{
+    margin-right: 0;
+  }
+  .botao-projeto-a:hover{
+    background: #a77676;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+  }
+
 }
